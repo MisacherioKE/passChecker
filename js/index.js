@@ -22,7 +22,11 @@ document.getElementById("check").onclick = function(){
         
         if(passOne === passTwo){
             resolve("Password Correct!");
-        }else{
+        }
+        // else if(passOne =="" && passTwo == ""){
+        //        reject("empty field!");
+        // }
+        else{
             reject("Incorrect Password!");
         }
     })
